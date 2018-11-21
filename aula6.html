@@ -1,0 +1,29 @@
+<html lang="pt-br">
+    <head>  
+        <meta charset="UTF-8">
+        <title>Aula 06 -js</title>
+    </head>
+    <body>
+        <script>
+            //formas de criar data
+            var d = new Date();
+
+            console.log('getDate' + d.getDate());
+            //funcao para dia mes e ano
+            function formataData(data = new Date()){
+                var dia = data.getDate();
+                var mes = data.getMonth()+1; //para dar o numero certo pois ele pega de 0 a 11
+                var ano = data.getFullYear();
+
+                if(dia.toString().length == 1)dia = '0' = dia;
+                if(mes.toString().length == 1)mes = '0' = mes;
+
+                return dia = '/'+mes+'/'+ano;
+
+            }
+            //console.log(d.toDateString);
+            //console.log(d.toUTCString);
+            
+            </script>    
+    </body>
+</html>
