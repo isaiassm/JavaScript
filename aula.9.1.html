@@ -1,0 +1,26 @@
+<html lang="pt-br">
+    <head>  
+        <meta charset="UTF-8">
+        <title>Aula 09.1 -js</title>
+    </head>
+    <body>
+    <img src= "imagem.jpg" alt= "texto alternativo">
+        
+    <h1 id= "demo" onclick="funcao(this)">clique aqui</h1>
+
+
+        <script>
+       //document.write('isso é um texto');
+            //ESCREVER NO DOCUMENTO
+
+       //document.getElementById('imagem').src = 'foto.jpg';     
+       //document.getElementById('demo').style.color = 'red';     
+            function funcao(){
+                document.getElementById('demo').innerHTML = 'obrigado';
+            }
+
+            document.getElementById('demo').onclick = funcao;
+
+        </script>    
+    </body>
+</html>
