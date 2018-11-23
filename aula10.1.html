@@ -1,0 +1,43 @@
+<html lang="pt-br">
+    <head>  
+        <meta charset="UTF-8">
+        <title>Aula 010 -js</title>
+    </head>
+    <body>
+        <div id='msg'>
+            </div>
+     
+        <input type ="button" value="avancar" onclick="clearTimeout(msg)" />
+        <input type ="button" value="voltar" onclick="" />
+        <script>
+            //console.log(window.location.href);
+            //identificar a url do momento
+
+          //  window.localStorage.setItem('chave', 'valor');
+          //  window.sessionStorage.setItem('chave2', 'valor')
+         //   document.getElementById('msg').innerHTML = window.sessionStorage.getItem('nome');
+            //armazena item
+
+        //    window.open('http//exemolo.com', '', 'width-500')
+                //abrir uma janela extra
+            //setTimeout(msgtimeout,5000);
+            setInterval(verificaFoco, 200)
+            function verificaFoco(){
+                if(document.hasFocus()){
+                    contador++;
+                    console.log(contador);
+                    if(contador >= 10){
+                        msgtimeout();
+                        clearInterval(intervalo);
+                    }
+                }
+            }
+            function setTimeout(){
+               document.getElementById('msg').innerHTML = 'obrigado por visitar minha pagina'
+            }
+    
+
+
+        </script>    
+    </body>
+</html>

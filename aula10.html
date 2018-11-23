@@ -1,0 +1,46 @@
+<html lang="pt-br">
+    <head>  
+        <meta charset="UTF-8">
+        <title>Aula 010 -js</title>
+        <style> 
+        .zebrada{background:silver;}
+        </style>
+    </head>
+    <body>
+        <table class = "zebra">
+            <thead>
+                <tr>   
+                    <th>Nome</th>
+                    <th>Fone</th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr>   
+                <th>Ricardo</th>
+                     <th>0xx00 00000-0000</th>
+            </tr>
+                 <tr>   
+                <th>Edu</th>
+                    <th>0xx00 00000-0000</th>
+                </tr>
+                <tr>   
+                    <th>João</th>
+                    <th>0xx00 00000-0000</th>
+                </tr>   
+                
+                 <tr>   
+                        <th>Ricardo</th>
+                     <th>0xx00 00000-0000</th>
+                </tr>      
+            </tbody>
+        </table>
+        <script>
+        window.onload = function(){
+            var zebra =  document.querySelectorAll('.zebra tbody tr')
+            for(var i = 0; i < zebra.length; i+=2){
+                zebrar[i].className = 'zebrada';
+            }
+        }
+        </script>    
+    </body>
+</html>
